@@ -21,7 +21,7 @@ print(prediction)
 #use np.c_ to concatenate the data and lables to one array thus creating a dataframe
 iris_dataframe=pd.DataFrame(data=np.c_[iris['data'],iris['target']],
                             columns=iris['feature_names']+['target'])
-#print(iris_dataframe.head()) check structure of dataframe
+#print(iris_dataframe.head()) check new dataframe
 
 feature_set=iris_dataframe.drop('target',axis=1)
 target_set=iris_dataframe['target']
